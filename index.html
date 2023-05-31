@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <div class="container">
+        <div class="column">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo">
+            </div>
+            <textarea id="inputText" class="textBox" placeholder="Ingrese el texto aquí"></textarea>
+            <span class="badge"> <span>&#9888;</span> Solo letras minusculas y sin acentos</span>
+            <ul class="buttons">
+                <li>
+                    <button  class="button" onclick="encrypt()">Encriptar!</input>
+                </li>
+                <li>
+                    <button class="button" onclick="decrypt()">Desencriptar!</input>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="card">
+                <textarea id="outputText" placeholder="Texto encriptado/desencriptado" readonly></textarea>
+                <button class ="button" onclick="copyToClipboard()">Copiar texto</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <p style="color: black; margin-left: 100%;">pagina personal Sergio palafox.</p>
+</footer>
+
+</html>
